@@ -2,11 +2,11 @@
 
 const express = require('express');
 const http = require('http');
-const socketIO = require('socket.io');
+const socket = require('socket.io');
 
 const app = express();
 const server = http.createServer(app);
-// const io = socketIO.listen(server);
+const io = socket(server);
 
 app.use(express.static(__dirname + '/public'))
 
@@ -30,6 +30,7 @@ const parser = new serialPort.parsers.Readline();
 port.pipe(parser);
 
 parser.on('data', (line)=>{
-    console.log(line);
+    // console.log(line);
+    io.emit('temperatura', line);
 });
 
