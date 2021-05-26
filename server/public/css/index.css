@@ -1,3 +1,60 @@
 :root{
-    --main-color: #bdd2b6;
+    --main-color: #6e7c7c;
+    --second--color: #435560;
+}
+
+/*Reset de margenes y espaciados*/
+*{
+    padding: 0;
+    margin: 0;
+
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box{
+    height: 350px;
+    width: 550px;
+    overflow: hidden;
+    border-radius: 20px;
+
+    background-color: var(--second--color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.temperatura{
+    width: 85%;
+    height: 50%;
+    /* background-color: violet; */
+    border-bottom: 3px solid white;
+}
+
+.humedad{
+    width: 85%;
+    height: 50%;
+    /* background-color: turquoise; */
+}
+
+/* Mobile */
+@media only screen and (max-width: 800px){
+
+    .main-box{
+        height: 550px;
+        width: 350px;
+    }
+
 }
