@@ -2,9 +2,10 @@
   "name": "Proyecto-AHS",
   "version": "1.0.0",
   "description": "Proyecto estación de medición de humedad y temperatura con Arduino y JS para Arquitectura de Hardware y Software.",
-  "main": "index.js",
+  "main": "js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node js/index.js"
   },
   "repository": {
     "type": "git",
