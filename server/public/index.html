@@ -5,66 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome JS -->
+    <script src="https://kit.fontawesome.com/1c8dd1943a.js" crossorigin="anonymous"></script>
+
     <title>Estacion de Temperatura</title>
 </head>
 
 <body>
     <!-- Iniicio Area de trabajo -->
 
-    <div class="container">
+<div class="container">
 
-            <div class="card card-principal">
-                    <h3 class="card-title">Temperatura</h3>
-
-                    <div class="cuerpo">
-                        <!-- Quiero que el cuerpo quede mas centrado -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-temperature" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M10 13.5a4 4 0 1 0 4 0v-8.5a2 2 0 0 0 -4 0v8.5" />
-                            <line x1="10" y1="9" x2="14" y2="9" />
-                          </svg>
-                        <span id="temp">22.9 °C</span>
-                    </div>
-            </div>
-
-        <div class="aside">
-
-            <div class="card card-side">
-                    <h3 class="card-title">Humedad</h3>
-                    <div class="cuerpo">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-droplet" width="88" height="88" viewBox="0 0 24 24" stroke-width="1" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M6.8 11a6 6 0 1 0 10.396 0l-5.197 -8l-5.2 8z" />
-                          </svg>
-                        <span id="hum">59.6% </span>
-                    </div>
-            </div>
-
-            <div class="card card-side">
-                    <h3 class="card-title">Resumen</h3>
-                    <div class="resumen ">
-                        <!-- Quiero que el icono se centre con el texto del span -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-temperature-fahrenheit" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <circle cx="6" cy="8" r="2" />
-                            <line x1="13" y1="12" x2="18" y2="12" />
-                            <path d="M20 6h-6a1 1 0 0 0 -1 1v11" />
-                          </svg>
-                          <span >sd das</span>
-                        <br>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-droplet" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M6.8 11a6 6 0 1 0 10.396 0l-5.197 -8l-5.2 8z" />
-                          </svg>
-                          <span >sd das</span>
-                        
-                    </div>
-            </div>
+    <div class="card card-principal">
+        <div class="card-title">
+            <h2>Temperatura</h2>
+        </div>
+        <div class="cuerpo main-text">
+            <span><i class="fas fa-thermometer-quarter"></i></span>
+            <span id="temp">30°C</span>
         </div>
     </div>
+
+    <div class="aside">
+
+        <div class="card card-side">
+            <div class="card-title">
+                <h3>Humedad</h3>
+            </div>
+            <div class="cuerpo second-text">
+                <span><i class="fas fa-tint"></i></span>
+                <span id="hum"> 60%</span>
+            </div>
+        </div>
+
+        <div class="card card-side">
+            <div class="card-title">
+                <h3>Resumen</h3>
+            </div>
+                <div class="cuerpo resumen">
+                    <div>
+                        <span><i class="fas fa-thermometer-full"></i></span>
+                        <span>30°C</span>
+                    </div>
+                    <div>
+                        <span ><i class="fas fa-tint"></i></span>
+                        <span>60%</span>
+                    </div>   
+                </div>
+        </div>
+    </div>
+
+</div>
 
     <!-- Fin area de trabajo -->
     <script src="/socket.io/socket.io.js"></script>

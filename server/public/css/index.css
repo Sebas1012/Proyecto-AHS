@@ -1,94 +1,123 @@
 :root{
-    --fuenteHeading: 'PT Sans', sans-serif;
-    --fuenteParrafos: 'Open Sans', sans-serif;
+    --fuenteHeading: 'Inter', sans-serif;
+    --fuenteParrafos: 'Inter', sans-serif;
 }
 
 /*Reset de margenes y espaciados*/
 *{
     padding: 0;
     margin: 0;
+
+    font-family: var(--fuenteParrafos);
 }
 
 body{
     min-width: 100vw;
     min-height: 100vh;
-    font-family: var(--fuenteParrafos);
-    font-size: 1.2rem;
-    line-height: 2;
-}
 
-h1, h2, h3, h4 {
-    font-family: var(--fuenteHeading);
-    line-height: 1.2;
+    /* background-color: #5b23f5; */
 
-}
-
-span {
-    font-family: var(--fuenteHeading);
-}
-
-.container {
     display: flex;
-    /*Este centra en eje y*/
     justify-content: center;
-    /*Este en el x*/
     align-items: center;
-
 }
 
 
-.card {
-    background-color: #f2f5f5;
-    border: 2px solid rgb(190, 192, 192);
-    border-radius: 1rem;
+span{
+    font-weight: lighter;
+}
+
+.container{
+    display: flex;
+
+}
+
+.card{
+    /* background-color: #f2f5f5; */
+    border: solid 1px #E3E3E3;
+    border-radius: 20px;
     margin: 2px;
+
+    overflow: hidden;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(227,227,227,0.49); 
+    box-shadow: 5px 5px 15px 5px rgba(227,227,227,0.49);
+
     
 }
 
+.card-title{
+    /* background-color: blue; */
+    height: 25%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.card-title h2, h3{
+    padding: 10px 0px 0px 20px;
+}
+
 .card-side {
-    height: 126px;
+    height: 128px;
     width: 200px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .card-principal {
     height: 260px;
     width: 25rem;
 
+    display: flex;
+    flex-direction: column;
 }
 
-.card-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(0, 89, 255);
-    font-size: 30px;
-}
+
 
 .cuerpo {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
+    /* background-color: aqua; */
+    width: 100%;
+    height: 75%;
+}
+
+.cuerpo span{
+    padding: 0px 10px 0px 0px;
+}
+
+.main-text{
+    font-size: 60px;
+}
+
+.second-text{
+    font-size: 30px;
 }
 
 .resumen {
-    text-align: center;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-
-#temp {
-    color: #5b23f5;
-    
-}
-
-#hum {
-    color: #5b23f5;
-    font-size: 2rem;
+    font-size: 20px;
 }
 
 
 /* Mobile */
 @media only screen and (max-width: 800px){
+    .container{
+        flex-direction: column;
+    }
 
-
+    .card-side {
+        height: 128px;
+        width: 25rem;
+    
+        flex-direction: column;
+    }
 } 
