@@ -30,7 +30,7 @@ const parser = new serialPort.parsers.Readline();
 port.pipe(parser);
 
 parser.on('data', (line)=>{
-    // console.log(line);
+    console.log(line);
     io.emit('temperatura', line);
 });
 
