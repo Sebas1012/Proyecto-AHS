@@ -41,5 +41,7 @@ localhost:3000
 
 *Nota: Recuerde validar el puerto de comunicación serial que esta usando su placa, por defecto esta configurado el puerto **COM4** pero si es uno diferente al mismo cambielo en el archivo [index.js](/server/index.js) ubicado en la carpeta server. Cambie la **línea de código número 24** por el puerto necesario (SIEMPRE DENTRO DE COMILLAS).*
 
-<p aling="center">Hecho con ❤️ por Sebastián y Stiven. </p>
+<p align="center">
+  <b>Hecho con ❤️ por: Sebastián y Stiven. </b>
+</p>
 
