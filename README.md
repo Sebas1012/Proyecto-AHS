@@ -27,5 +27,5 @@ Si el comando anterior tienen algun fallo, solo dirijase a la carpeta [server]()
 node index.js
 ```
 
-*Nota: Recuerde validar el puerto de comunicacion serial que esta usando su placa, por defecto esta configurado el puerto COM4 pero si es uno diferente al mismo cambielo en el archivo [index.js](Proyecto-AHS/server/index.js) ubicado en la carpeta server. Cambie la linea de codigo numero 24 por el puerto necesario (SIEMPRE DENTRO DE COMILLAS).*
+*Nota: Recuerde validar el puerto de comunicacion serial que esta usando su placa, por defecto esta configurado el puerto COM4 pero si es uno diferente al mismo cambielo en el archivo [index.js](/server/index.js) ubicado en la carpeta server. Cambie la linea de codigo numero 24 por el puerto necesario (SIEMPRE DENTRO DE COMILLAS).*
 
