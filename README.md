@@ -27,5 +27,15 @@ Si el comando anterior tienen algun fallo, solo dirijase a la carpeta [server](/
 node index.js
 ```
 
+Luego de ejecutar cualquiera de los comandos anteriores, desde consola se le indicara el puerto por el que puede acceder a la interface web, que por default es:
+```
+port: 3000
+```
+
+Como ultimo solo queda dirigirse en su navegador a la direccion:
+```
+localhost:3000
+```
+
 *Nota: Recuerde validar el puerto de comunicacion serial que esta usando su placa, por defecto esta configurado el puerto COM4 pero si es uno diferente al mismo cambielo en el archivo [index.js](/server/index.js) ubicado en la carpeta server. Cambie la linea de codigo numero 24 por el puerto necesario (SIEMPRE DENTRO DE COMILLAS).*
 
