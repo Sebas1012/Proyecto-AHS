@@ -1,5 +1,7 @@
-# Proyecto-AHS
-Proyecto estación de medición de humedad y temperatura con Arduino y JS para Arquitectura de Hardware y Software.
+# Estacion de medicion de temperatura y humedad.
+Proyecto estación de medición de humedad y temperatura con Arduino y JS para la asignatura Arquitectura de Hardware y Software.
+
+**Por: Sebastian Henao Loaiza y Brayan Stiven Marin Duque.**
 
 ## Dependencias:
 - Express
