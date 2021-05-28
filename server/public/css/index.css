@@ -107,6 +107,15 @@ span{
     font-size: 20px;
 }
 
+.data_resumen{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
 
 /* Mobile */
 @media only screen and (max-width: 800px){

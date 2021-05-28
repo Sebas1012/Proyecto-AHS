@@ -16,14 +16,14 @@
     <title>Estacion de Temperatura</title>
 </head>
 
-<body>
+<body class="light">
     <!-- Iniicio Area de trabajo -->
 
 <div class="container">
 
     <div class="card card-principal">
         <div class="card-title">
-            <h2>Temperatura</h2>
+            <h2>Temperatura: </h2>
         </div>
         <div class="cuerpo main-text">
             <span><i class="fas fa-thermometer-quarter"></i></span>
@@ -35,24 +35,24 @@
 
         <div class="card card-side">
             <div class="card-title">
-                <h3>Humedad</h3>
+                <h3>Humedad: </h3>
             </div>
             <div class="cuerpo second-text">
                 <span><i class="fas fa-tint"></i></span>
-                <span id="hum"> 60%</span>
+                <span id="hum">60%</span>
             </div>
         </div>
 
         <div class="card card-side">
             <div class="card-title">
-                <h3>Resumen</h3>
+                <h3>Resumen: </h3>
             </div>
                 <div class="cuerpo resumen">
-                    <div>
+                    <div class="data_resumen">
                         <span><i class="fas fa-thermometer-full"></i></span>
                         <span id="complete_temp">30°C</span>
                     </div>
-                    <div>
+                    <div class="data_resumen" style="padding-right: 6px;">
                         <span><i class="fas fa-tint"></i></span>
                         <span id="complete_hum">60%</span>
                     </div>   
@@ -64,7 +64,8 @@
 
     <!-- Fin area de trabajo -->
     <script src="/socket.io/socket.io.js"></script>
-    <script src="data.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/tema.js"></script>
 </body>
 
 </html>
