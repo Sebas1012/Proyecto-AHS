@@ -30,7 +30,15 @@ const parser = new serialPort.parsers.Readline();
 port.pipe(parser);
 
 parser.on('data', (line)=>{
-    console.log(line);
-    io.emit('temperatura', line);
+    let datos = line;
+    let str = datos.toString();
+
+    let humedad = str.substr(0, 5);
+    let tmp = str.substr(5, 5);
+
+    console.log(`La temperatura es de ${tmp}°C con una humedad del ${humedad}%`);
+    
+
+    io.emit('temperatura', str);
 });
 
