@@ -15,14 +15,14 @@ npm install
 *Nota: Es importante tener instalada la libreria [DHT.h](https://github.com/adafruit/DHT-sensor-library) en nuestro IDE de arduino, la misma puede instalarse desde el propio IDE.*
 
 ## Uso:
-Para poder hacer uso de este programa, primero debe subir el codigo del archivo [sensor.ino]() a su placa.
+Para poder hacer uso de este programa, primero debe subir el codigo del archivo [sensor.ino](/sensor.ino) a su placa.
 
 Luego solo necesita ejecutar estando en la carpeta desde consola el comando:
 ```
 npm start
 ```
 
-Si el comando anterior tienen algun fallo, solo dirijase a la carpeta [server]() y ejecute el siguiente comando:
+Si el comando anterior tienen algun fallo, solo dirijase a la carpeta [server](/server) y ejecute el siguiente comando:
 ```
 node index.js
 ```
