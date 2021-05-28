@@ -37,12 +37,14 @@ void loop(){
         return;
     }
 
-    Serial.print("Humedad: ");
-    Serial.print(humedad);
-    Serial.print("%");
+/* ATENCION: esto es una chapuza que hice para poder trabajar los datos como un string en JS ruego al que lea esto que si no lo va a mejorar que mejor NO LO TOQUE*/
+    String humedad_str = String(humedad);
+    String temperatura_str = String(temperatura);
+
+    humedad_str.concat(temperatura_str);
+
+    Serial.print(humedad_str);
     Serial.print("\n");
-    Serial.print("Temperatura: ");
-    Serial.print(temperatura);
-    Serial.print("°C");
-    Serial.print("\n");
+/*-------------------------PELIGRO----------------------------*/
+
 }
