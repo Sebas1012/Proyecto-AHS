@@ -114,6 +114,25 @@ span{
 
 }
 
+.dark{
+    background-color: #121212;
+    color: white;
+}
+
+.dark-card{
+    background-color: #242424;
+    -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+
+    border: 1px solid #282828;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
+
 
 
 
