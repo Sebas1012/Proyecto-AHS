@@ -11,7 +11,7 @@ const io = socket(server);
 app.use(express.static(__dirname + '/public'))
 
 server.listen(3000, function(){
-    console.log('Servidor listo en:', 3000);
+    console.log('Servidor listo en el puerto:', 3000);
 });
 
 
