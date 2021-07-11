@@ -3,6 +3,11 @@ Proyecto estación de medición de humedad y temperatura con Arduino y JS para l
 
 **Por: Sebastian Henao Loaiza y Brayan Stiven Marin Duque.**
 
+## UI:
+<p align="center">
+<img src="https://i.ibb.co/wR0WV4K/1.jpg" alt="1" border="0">
+</p>
+
 ## Dependencias:
 - Express JS
 - SerialPort JS
