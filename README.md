@@ -50,7 +50,7 @@ localhost:3000
 Para hacer uso del modo oscuro solo debe hacer uso de la funcion que se encuentra en el archivo [tema.js](/server/public/js/tema.js). 
 ```javascript
 function tema(tipo){
-...
+  ...
 };
 ```
 
